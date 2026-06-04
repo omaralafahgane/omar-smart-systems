@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مؤسسة عمر للأنظمة الذكية</title>
+  <meta name="description" content="حلول تقنية متكاملة باحترافية عالية — كاميرات مراقبة، تكييف، صيانة، شبكات">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg width="38" height="38" viewBox="0 0 38 38" fill="none">
+            <circle cx="19" cy="19" r="18" stroke="#00c8ff" stroke-width="1.5"/>
+            <circle cx="19" cy="19" r="8" fill="#00c8ff" opacity="0.2"/>
+            <circle cx="19" cy="19" r="4" fill="#00c8ff"/>
+            <line x1="19" y1="1" x2="19" y2="8" stroke="#00c8ff" stroke-width="1.5"/>
+            <line x1="19" y1="30" x2="19" y2="37" stroke="#00c8ff" stroke-width="1.5"/>
+            <line x1="1" y1="19" x2="8" y2="19" stroke="#00c8ff" stroke-width="1.5"/>
+            <line x1="30" y1="19" x2="37" y2="19" stroke="#00c8ff" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">OMAR</span>
+          <span class="logo-sub">الأنظمة الذكية</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#testimonials">آراء عملائنا</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+      <a href="https://wa.me/962789970626" target="_blank" class="nav-cta">
+        <span>📞 اتصل الآن</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="قائمة التنقل">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">★ حلول تقنية متكاملة ★</div>
+      <h1 class="hero-title">
+        <span class="brand-name">OMAR</span>
+        <br>
+        <span class="hero-subtitle">للأنظمة الذكية</span>
+      </h1>
+      <p class="hero-desc">
+        نقدّم خدمات موثوقة في الأنظمة الأمنية، التبريد، الصيانة، والشبكات<br>للأفراد والشركات والمحلات التجارية في الزرقاء
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">+6.1K</span>
+          <span class="stat-label">عميل ومتابع</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">خدمات متكاملة</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">احترافية</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#services" class="btn-primary">اكتشف خدماتنا</a>
+        <a href="https://wa.me/962789970626" target="_blank" class="btn-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          واتساب
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="security-ring">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+        <div class="center-icon">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+            <path d="M30 5L8 15v15c0 13.255 9.4 25.647 22 29 12.6-3.353 22-15.745 22-29V15L30 5z" fill="#00c8ff" opacity="0.15" stroke="#00c8ff" stroke-width="1.5"/>
+            <path d="M30 12L13 20v12c0 10.6 7.52 20.518 17.6 23.2 10.08-2.682 17.6-12.6 17.6-23.2V20L30 12z" fill="#00c8ff" opacity="0.1"/>
+            <circle cx="30" cy="28" r="8" fill="#00c8ff" opacity="0.3"/>
+            <circle cx="30" cy="28" r="4" fill="#00c8ff"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== BRAND STORY ===== -->
+  <section class="brand-story" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">قصتنا</span>
+        <h2>لماذا مؤسسة عمر؟</h2>
+        <p>شريكك التقني الموثوق في الزرقاء</p>
+      </div>
+      <div class="story-grid">
+        <div class="story-card">
+          <div class="story-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 4L4 11v10c0 9.4 6.8 18.2 16 20.8 9.2-2.6 16-11.4 16-20.8V11L20 4z" fill="#00c8ff" opacity="0.15" stroke="#00c8ff" stroke-width="1.5"/>
+              <path d="M14 20l4 4 8-8" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>حماية موثوقة</h3>
+          <p>نوفر خدمة واحدة متكاملة تضمن لك راحة البال ومراقبة مكانك من أي مكان في العالم</p>
+        </div>
+        <div class="story-card">
+          <div class="story-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="15" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.1"/>
+              <path d="M13 20h14M20 13v14" stroke="#00c8ff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>تكامل حقيقي</h3>
+          <p>من كاميرات المراقبة إلى التبريد والصيانة والشبكات، كل شيء من مكان واحد بأسعار تنافسية</p>
+        </div>
+        <div class="story-card">
+          <div class="story-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M8 20h4l4-8 4 16 4-8 4 4h4" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>سرعة واحترافية</h3>
+          <p>فريق متخصص يصل إليك بسرعة، ينفذ بدقة، ويضمن رضاك التام بعد كل عملية</p>
+        </div>
+        <div class="story-card">
+          <div class="story-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 8c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12S26.627 8 20 8z" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.1"/>
+              <path d="M16 20l3 3 6-6" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>خدمة شاملة</h3>
+          <p>نخدم الأفراد والشركات والمحلات التجارية في جميع مناطق الزرقاء بضمان الجودة</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">خدماتنا</span>
+        <h2>حلول تقنية متكاملة</h2>
+        <p>نقدّم خدمات موثوقة في الأنظمة الأمنية، التبريد، الصيانة، والشبكات</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card" data-service="cameras">
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="4" y="14" width="36" height="24" rx="4" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08"/>
+              <path d="M40 20l8-6v24l-8-6V20z" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08"/>
+              <circle cx="22" cy="26" r="5" stroke="#00c8ff" stroke-width="1.5"/>
+              <circle cx="22" cy="26" r="2" fill="#00c8ff"/>
+            </svg>
+          </div>
+          <h3>أنظمة كاميرات المراقبة</h3>
+          <p>تركيب وبرمجة كاميرات مراقبة عالية الدقة للمنازل والشركات والمحلات، مع إمكانية المشاهدة عبر الهاتف من أي مكان</p>
+          <ul class="service-features">
+            <li>كاميرات Full HD و 4K</li>
+            <li>رؤية ليلية متقدمة</li>
+            <li>متابعة عبر الهاتف مباشرة</li>
+          </ul>
+          <a href="#contact" class="service-btn">اطلب عرض سعر</a>
+        </div>
+
+        <div class="service-card" data-service="ac">
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <rect x="6" y="12" width="40" height="16" rx="3" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08"/>
+              <rect x="14" y="28" width="4" height="12" rx="1" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08"/>
+              <path d="M10 40h32" stroke="#00c8ff" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="18" cy="20" r="3" stroke="#00c8ff" stroke-width="1.5"/>
+              <path d="M26 16v8M30 16v8M34 16v8" stroke="#00c8ff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>أنظمة التبريد والتكييف</h3>
+          <p>تركيب وصيانة أجهزة التكييف والتبريد لجميع المساحات، بكفاءة عالية وأسعار تنافسية</p>
+          <ul class="service-features">
+            <li>تركيب وصيانة احترافية</li>
+            <li>جميع المساحات والأحجام</li>
+            <li>ضمان على العمل</li>
+          </ul>
+          <a href="#contact" class="service-btn">اطلب عرض سعر</a>
+        </div>
+
+        <div class="service-card" data-service="maintenance">
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <path d="M38 10l-4 4-6-6-4 4 6 6-4 4 4 4 4-4 6 6 4-4-6-6 4-4-4-4z" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08" stroke-linejoin="round"/>
+              <path d="M14 28l-8 8a2 2 0 002.83 2.83l8-8" stroke="#00c8ff" stroke-width="1.5" stroke-linecap="round"/>
+              <rect x="10" y="32" width="12" height="8" rx="2" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.08" transform="rotate(-45 16 36)"/>
+            </svg>
+          </div>
+          <h3>صيانة الشاشات والإلكترونيات</h3>
+          <p>تشخيص وإصلاح احترافي للشاشات والأجهزة الإلكترونية بسرعة ودقة عالية</p>
+          <ul class="service-features">
+            <li>تشخيص دقيق وسريع</li>
+            <li>قطع غيار أصلية</li>
+            <li>ضمان بعد الإصلاح</li>
+          </ul>
+          <a href="#contact" class="service-btn">اطلب عرض سعر</a>
+        </div>
+
+        <div class="service-card" data-service="network">
+          <div class="service-glow"></div>
+          <div class="service-icon">
+            <svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="4" fill="#00c8ff"/>
+              <circle cx="10" cy="14" r="3" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.2"/>
+              <circle cx="42" cy="14" r="3" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.2"/>
+              <circle cx="10" cy="38" r="3" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.2"/>
+              <circle cx="42" cy="38" r="3" stroke="#00c8ff" stroke-width="1.5" fill="#00c8ff" opacity="0.2"/>
+              <line x1="26" y1="26" x2="10" y2="14" stroke="#00c8ff" stroke-width="1" opacity="0.5"/>
+              <line x1="26" y1="26" x2="42" y2="14" stroke="#00c8ff" stroke-width="1" opacity="0.5"/>
+              <line x1="26" y1="26" x2="10" y2="38" stroke="#00c8ff" stroke-width="1" opacity="0.5"/>
+              <line x1="26" y1="26" x2="42" y2="38" stroke="#00c8ff" stroke-width="1" opacity="0.5"/>
+              <path d="M18 26c0-4.418 3.582-8 8-8s8 3.582 8 8" stroke="#00c8ff" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+              <path d="M14 26c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#00c8ff" stroke-width="1" stroke-linecap="round" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>حلول الشبكات والإنترنت</h3>
+          <p>تصميم وتركيب شبكات Wi-Fi وإنترنت مستقرة وسريعة للمنازل والشركات والمحلات</p>
+          <ul class="service-features">
+            <li>تغطية شاملة وبلا نقاط عمياء</li>
+            <li>راوترات عالية الأداء</li>
+            <li>إعداد وضبط احترافي</li>
+          </ul>
+          <a href="#contact" class="service-btn">اطلب عرض سعر</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">آراء عملائنا</span>
+        <h2>ماذا يقولون عنا</h2>
+        <p>ثقة أكثر من 6.1K عميل ومتابع في الزرقاء</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"خدمة ممتازة وسريعة، ركبوا كاميرات مراقبة في محلي والآن أشوف كل شيء من هاتفي. ننصح كل صاحب محل يتعامل معهم."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">A</div>
+            <div>
+              <span class="reviewer-name">عميل من الزرقاء</span>
+              <span class="reviewer-type">صاحب محل تجاري</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p>"فريق عمر للأنظمة الذكية حل مشكلة الإنترنت في مكتبي بسرعة واحترافية عالية، السعر مناسب جدًا والخدمة ممتازة."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">M</div>
+            <div>
+              <span class="reviewer-name">عميل من الزرقاء</span>
+              <span class="reviewer-type">شركة تجارية</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"ركبوا مكيف جديد في بيتي، التركيب كان نظيف وسريع، والمكيف يشتغل بشكل ممتاز. شكرًا لفريق عمر على الاحترافية."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">S</div>
+            <div>
+              <span class="reviewer-name">عميل من الزرقاء</span>
+              <span class="reviewer-type">عميل منزلي</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="social-proof-bar">
+        <div class="proof-item">
+          <span class="proof-num">+6,100</span>
+          <span class="proof-label">متابع على فيسبوك</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-num">4</span>
+          <span class="proof-label">خدمات متخصصة</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-num">الزرقاء</span>
+          <span class="proof-label">نخدم جميع مناطقها</span>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-num">توصيل</span>
+          <span class="proof-label">خدمة توصيل متاحة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">تواصل معنا</span>
+        <h2>ابدأ مشروعك اليوم</h2>
+        <p>فريقنا جاهز لخدمتك في جميع مناطق الزرقاء</p>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>معلومات التواصل</h3>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .99h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">هاتف / واتساب</span>
+              <a href="tel:+96278997 0626" class="contact-value">+962 7 8997 0626</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">بريد إلكتروني</span>
+              <a href="mailto:omaralblack@gmail.com" class="contact-value">omaralblack@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00c8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">العنوان</span>
+              <span class="contact-value">الزرقاء 11317، الأردن</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/om200AR1" target="_blank" class="social-btn facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+              فيسبوك
+            </a>
+            <a href="https://www.instagram.com/om200ar1/" target="_blank" class="social-btn instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              إنستغرام
+            </a>
+            <a href="https://wa.me/962789970626" target="_blank" class="social-btn whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              واتساب
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)">
+            <h3>أرسل طلبك</h3>
+            <div class="form-group">
+              <label for="name">الاسم الكامل</label>
+              <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">رقم الهاتف</label>
+              <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+            </div>
+            <div class="form-group">
+              <label for="service">نوع الخدمة</label>
+              <select id="service" name="service" required>
+                <option value="">اختر الخدمة</option>
+                <option value="cameras">أنظمة كاميرات المراقبة</option>
+                <option value="ac">تبريد وتكييف</option>
+                <option value="maintenance">صيانة شاشات وإلكترونيات</option>
+                <option value="network">شبكات وإنترنت</option>
+                <option value="other">أخرى</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">تفاصيل إضافية</label>
+              <textarea id="message" name="message" rows="4" placeholder="صف طلبك باختصار..."></textarea>
+            </div>
+            <button type="submit" class="form-submit">إرسال الطلب</button>
+            <p class="form-note">أو تواصل مباشرة عبر واتساب: <a href="https://wa.me/962789970626" target="_blank">0789970626</a></p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <div class="success-icon">✓</div>
+            <h3>تم إرسال طلبك بنجاح!</h3>
+            <p>سيتواصل معك فريقنا قريبًا. أو تواصل عبر واتساب للحصول على رد فوري.</p>
+            <a href="https://wa.me/962789970626" target="_blank" class="btn-whatsapp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              تواصل عبر واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-main">OMAR</span>
+            <span class="logo-sub">الأنظمة الذكية</span>
+          </div>
+          <p>حلول تقنية متكاملة باحترافية عالية — الزرقاء، الأردن</p>
+        </div>
+        <div class="footer-links">
+          <h4>خدماتنا</h4>
+          <ul>
+            <li><a href="#services">كاميرات المراقبة</a></li>
+            <li><a href="#services">تبريد وتكييف</a></li>
+            <li><a href="#services">صيانة إلكترونيات</a></li>
+            <li><a href="#services">شبكات وإنترنت</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>تواصل</h4>
+          <p>📞 <a href="tel:+96278997 0626">+962 7 8997 0626</a></p>
+          <p>📧 <a href="mailto:omaralblack@gmail.com">omaralblack@gmail.com</a></p>
+          <p>📍 الزرقاء، الأردن</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © 2025 مؤسسة عمر للأنظمة الذكية</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/om200AR1" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/om200ar1/" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/962789970626" target="_blank">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/962789970626" target="_blank" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-tooltip">تواصل معنا</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
