@@ -92,44 +92,29 @@ if (particlesContainer) {
   document.head.appendChild(style);
 }
 
-// ===== CONTACT FORM =====
-function handleSubmit(e) {
-  e.preventDefault();
-  const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
-  const btn = form.querySelector('.form-submit');
-
-  btn.textContent = 'جاري الإرسال...';
-  btn.disabled = true;
-
-  // Get form data for WhatsApp
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
-  const service = document.getElementById('service').value;
-  const message = document.getElementById('message').value;
-
-  const serviceNames = {
-    cameras: 'أنظمة كاميرات المراقبة',
-    ac: 'تبريد وتكييف',
-    maintenance: 'صيانة شاشات وإلكترونيات',
-    network: 'شبكات وإنترنت',
-    other: 'أخرى'
-  };
-
-  const waMsg = encodeURIComponent(
-    `مرحبا، أنا ${name}\nرقم الهاتف: ${phone}\nالخدمة: ${serviceNames[service] || service}\n${message ? 'ملاحظات: ' + message : ''}`
-  );
-
-  setTimeout(() => {
-    form.style.display = 'none';
-    success.style.display = 'block';
-    // Update WhatsApp link with form data
-    const waLink = success.querySelector('.btn-whatsapp');
-    if (waLink) {
-      waLink.href = `https://wa.me/962789970626?text=${waMsg}`;
-    }
-  }, 800);
+// ===== CONTACT FORM - FORMSPREE INTEGRATION =====
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    const btn = this.querySelector('.form-submit');
+    btn.textContent = 'جاري الإرسال...';
+    btn.disabled = true;
+    // Formspree will handle the submission
+  });
 }
+
+// Show success message after redirect from Formspree
+window.addEventListener('load', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get('success') === 'true' || window.location.hash === '#success') {
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    if (form && success) {
+      form.style.display = 'none';
+      success.style.display = 'block';
+    }
+  }
+});
 
 // ===== COUNTER ANIMATION =====
 function animateCounter(el, target, duration = 2000) {
