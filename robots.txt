@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+
+Sitemap: https://omaralafahgane.github.io/omar-smart-systems/sitemap.xml
