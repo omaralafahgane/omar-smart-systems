@@ -51,7 +51,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 const animateElements = document.querySelectorAll(
-  '.story-card, .service-card, .testimonial-card, .contact-item'
+  '.story-card, .service-card, .offer-card, .testimonial-card, .contact-item'
 );
 
 animateElements.forEach((el, i) => {
@@ -161,6 +161,39 @@ const statsSection = document.querySelector('.hero-stats');
 if (statsSection) statsObserver.observe(statsSection);
 const proofBar = document.querySelector('.social-proof-bar');
 if (proofBar) statsObserver.observe(proofBar);
+
+// ===== WHATSAPP CLICK TRACKING =====
+document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Google Analytics event
+    if (typeof gtag === 'function') {
+      gtag('event', 'whatsapp_click', {
+        event_category: 'engagement',
+        event_label: this.href.split('?')[0]
+      });
+    }
+    // Meta Pixel event
+    if (typeof fbq === 'function') {
+      fbq('track', 'Contact');
+    }
+  });
+});
+
+// ===== CONTACT FORM LEAD TRACKING =====
+const contactForm2 = document.getElementById('contactForm');
+if (contactForm2) {
+  contactForm2.addEventListener('submit', function() {
+    if (typeof gtag === 'function') {
+      gtag('event', 'form_submit', {
+        event_category: 'conversion',
+        event_label: 'contact_form'
+      });
+    }
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+  });
+}
 
 // ===== ACTIVE NAV LINK =====
 const sections = document.querySelectorAll('section[id]');
